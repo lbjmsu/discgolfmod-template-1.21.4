@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "discgolfmod",
+	"version": "${version}",
+	"name": "DiscGolfMod",
+	"description": "This mod allows you to play disc golf in minecraft!",
+	"authors": [
+		"EJcraft2"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/discgolfmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ejcraft2.discgolfmod.DiscGolfMod"
+		],
+		"client": [
+			"ejcraft2.discgolfmod.DiscGolfModClient"
+		],
+		"fabric-datagen": [
+			"ejcraft2.discgolfmod.DiscGolfModDataGenerator"
+		]
+	},
+	"mixins": [
+		"discgolfmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
