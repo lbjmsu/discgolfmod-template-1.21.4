@@ -1,5 +1,6 @@
 package ejcraft2.discgolfmod;
 
+import ejcraft2.discgolfmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,6 +14,6 @@ public class DiscGolfMod implements ModInitializer {
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 
-		LOGGER.info("Hello Fabric world!");
+		ModItems.initialize();
 	}
 }
